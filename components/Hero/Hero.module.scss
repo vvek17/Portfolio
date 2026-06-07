@@ -1,0 +1,243 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 80px;
+  text-align: center;
+  background: #0a0a0a;
+  color: #fff;
+  overflow: hidden;
+
+  h1 {
+    font-family: var(--font-outfit);
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: 20px;
+
+    span {
+      background: linear-gradient(90deg, #22d3ee, #a855f7);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #d1d5db;
+    max-width: 640px;
+    margin-bottom: 30px;
+
+    span {
+      color: #22d3ee;
+    }
+  }
+
+  .underline {
+    width: 180px;
+    height: 2px;
+    margin-bottom: 40px;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #22d3ee, #a855f7);
+  }
+}
+
+.lightRays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ctaWrapper {
+  position: relative;
+  z-index: 51;
+  background: #fff;
+  padding: 1px 1.1px;
+  transition: all 0.6s ease;
+  -webkit-clip-path: polygon(
+    98.522% 2.534%,
+    7.143% 2.534%,
+    0.493% 25.096%,
+    0.493% 92.78%,
+    83.99% 92.78%,
+    86.453% 100%,
+    100% 100%,
+    100% 30.51%,
+    98.522% 25.096%,
+    98.522% 2.534%
+  );
+
+  clip-path: polygon(
+    98.522% 2.534%,
+    7.143% 2.534%,
+    0.493% 25.096%,
+    0.493% 92.78%,
+    83.99% 92.78%,
+    86.453% 100%,
+    100% 100%,
+    100% 30.51%,
+    98.522% 25.096%,
+    98.522% 2.534%
+  );
+}
+
+.cta {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 14px 45px 16px 44px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(270deg, #22d3ee, #a855f7, #22d3ee);
+  background-size: 200% 100%;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.25);
+
+  -webkit-clip-path: polygon(
+    98.522% 2.534%,
+    7.143% 2.534%,
+    0.493% 25.096%,
+    0.493% 92.78%,
+    83.99% 92.78%,
+    86.453% 100%,
+    100% 100%,
+    100% 30.51%,
+    98.522% 25.096%,
+    98.522% 2.534%
+  );
+
+  clip-path: polygon(
+    98.522% 2.534%,
+    7.143% 2.534%,
+    0.493% 25.096%,
+    0.493% 92.78%,
+    83.99% 92.78%,
+    86.453% 100%,
+    100% 100%,
+    100% 30.51%,
+    98.522% 25.096%,
+    98.522% 2.534%
+  );
+
+  transition: transform 0s, box-shadow 0.2s ease, background-position 0.5s ease;
+
+  &:hover {
+    background-position: 100% 0;
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.35);
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .hero {
+    padding: 40px 60px;
+    h1 {
+      font-size: 72px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .cta {
+    padding: 14px 43px 15px 42px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .hero {
+    h1 {
+      font-size: 64px;
+    }
+  }
+
+  .cta {
+    padding: 14px 40px 14px 40px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .hero {
+    h1 {
+      font-size: 56px;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 560px;
+    }
+  }
+
+  .cta {
+    padding: 13px 40px 13px 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    padding: 40px;
+
+    h1 {
+      font-size: 48px;
+    }
+  }
+
+  .cta {
+    padding: 13px 36px 13px 36px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    padding: 40px 20px;
+    // min-height: 100svh;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 16px;
+      max-width: 500px;
+    }
+  }
+
+  .cta {
+    padding: 12px 32px 12px 32px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .hero {
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .hero {
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .cta {
+    padding: 12px 30px 12px 30px;
+    font-size: 15px;
+  }
+}

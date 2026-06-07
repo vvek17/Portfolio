@@ -1,0 +1,95 @@
+.skillsSection {
+  position: relative;
+  background: #0a0a0a;
+  color: white;
+  padding: 0px 80px 120px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  .fallDiv {
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+  }
+
+  .skillsMain {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .skillsSection {
+    padding: 0 60px 100px 60px;
+
+    .fallDiv {
+      height: 560px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .skillsSection {
+    padding: 0 60px 80px 60px;
+
+    .fallDiv {
+      height: 520px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .skillsSection {
+    .fallDiv {
+      height: 460px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .skillsSection {
+    padding: 0 40px 80px 40px;
+
+    .fallDiv {
+      height: 440px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .skillsSection {
+    padding: 0 20px 60px 20px;
+
+    .fallDiv {
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .skillsSection {
+    .fallDiv {
+      height: 375px;
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .skillsSection {
+    .fallDiv {
+      height: 350px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .skillsSection {
+    .fallDiv {
+      height: 325px;
+    }
+  }
+}

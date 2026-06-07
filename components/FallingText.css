@@ -1,0 +1,77 @@
+.falling-text-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.falling-text-target {
+  display: inline-block;
+}
+
+.word {
+  display: inline-block;
+  margin: 0 2px;
+  user-select: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.highlighted {
+  color: cyan;
+  font-weight: bold;
+}
+
+.falling-text-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 1599px) {
+  .word {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .word {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .word {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .word {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .word {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .word {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,330 @@
+.contactSection {
+  width: 80%;
+  padding: 0 80px 120px 80px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.contactHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  padding: 80px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: var(--font-outfit);
+  }
+
+  .socialLinks {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    a {
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 0.8rem 1.5rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+}
+
+.resumeButtonWrapper {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  padding: 1px 1.1px;
+  margin: 0 auto; // Center the button
+  -webkit-clip-path: polygon(
+    98.522% 2.534%,
+    7.143% 2.534%,
+    0.493% 25.096%,
+    0.493% 92.78%,
+    83.99% 92.78%,
+    86.453% 100%,
+    100% 100%,
+    100% 30.51%,
+    98.522% 25.096%,
+    98.522% 2.534%
+  );
+  clip-path: polygon(
+    98.522% 2.534%,
+    7.143% 2.534%,
+    0.493% 25.096%,
+    0.493% 92.78%,
+    83.99% 92.78%,
+    86.453% 100%,
+    100% 100%,
+    100% 30.51%,
+    98.522% 25.096%,
+    98.522% 2.534%
+  );
+  outline: none;
+  border: none;
+  margin-top: 40px;
+}
+
+.resumeButton {
+  transition: all 0.6s ease;
+  padding: 14px 45px 16px 44px;
+  background: linear-gradient(270deg, #22d3ee, #a855f7, #22d3ee);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-clip-path: polygon(
+    98.522% 2.534%,
+    7.143% 2.534%,
+    0.493% 25.096%,
+    0.493% 92.78%,
+    83.99% 92.78%,
+    86.453% 100%,
+    100% 100%,
+    100% 30.51%,
+    98.522% 25.096%,
+    98.522% 2.534%
+  );
+  clip-path: polygon(
+    98.522% 2.534%,
+    7.143% 2.534%,
+    0.493% 25.096%,
+    0.493% 92.78%,
+    83.99% 92.78%,
+    86.453% 100%,
+    100% 100%,
+    100% 30.51%,
+    98.522% 25.096%,
+    98.522% 2.534%
+  );
+
+  font-size: 18px;
+
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  background-size: 200% 100%;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.25);
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.35);
+    background-position: 100% 0;
+  }
+}
+
+.contactMain {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 18px 28px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    transform: translateY(-5px) scale(1.02);
+  }
+}
+
+.icon {
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    font-size: 16px;
+    font-family: var(--font-inter);
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .contactSection {
+    width: 90%;
+    padding: 0 80px 120px 80px;
+  }
+
+  .resumeButton {
+    padding: 14px 43px 15px 42px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .contactSection {
+    width: 100%;
+    padding: 0 60px 80px 60px;
+  }
+
+  .contactContent {
+    padding: 60px 20px;
+  }
+
+  .resumeButton {
+    padding: 14px 40px 14px 40px;
+  }
+
+  .socialSection {
+    h3 {
+      font-size: 26px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .contactContent {
+    padding: 50px 20px;
+  }
+
+  .resumeButton {
+    padding: 13px 40px 13px 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contactSection {
+    padding: 0 40px 80px 40px;
+  }
+
+  .contactContent {
+    padding: 40px 20px;
+  }
+
+  .resumeButton {
+    padding: 13px 36px 13px 36px;
+  }
+
+  .socialSection {
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  .contactCard {
+    padding: 16px 24px;
+  }
+
+  .socialSection {
+    .socialLinks {
+      a {
+        padding: 0.6rem 1.2rem;
+      }
+    }
+  }
+
+  .contactMain {
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contactSection {
+    padding: 0 20px 60px 20px;
+  }
+
+  .contactMain {
+    gap: 30px;
+    grid-template-columns: repeat(1, 330px);
+    justify-content: center;
+  }
+
+  .contactContent {
+    gap: 30px;
+  }
+
+  .resumeButton {
+    padding: 12px 32px 12px 32px;
+    font-size: 16px;
+  }
+
+  .socialSection {
+    .socialLinks {
+      a {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+
+  .socialSection {
+    h3 {
+      font-size: 22px;
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .contactMain {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contactCard {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .socialSection {
+    .socialLinks {
+      gap: 20;
+    }
+  }
+}
