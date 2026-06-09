@@ -57,7 +57,7 @@ function Contact() {
                             <FaEnvelope className={styles.icon} />
                         </div>
                         <div className={styles.textWrapper}>
-                            <a>viveksolanki.17122002@gmail.com</a>
+                            <a>vivek.s171202@gmail.com</a>
                         </div>
                     </button>
 
