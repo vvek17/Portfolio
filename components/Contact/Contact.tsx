@@ -18,7 +18,7 @@ function Contact() {
     };
 
     const handleMail = () => {
-        window.location.href = "mailto:viveksolanki.17122002@gmail.com";
+        window.location.href = "mailto:vivek.s171202@gmail.com";
     }
 
     const handleCall = () => {
