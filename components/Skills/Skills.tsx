@@ -42,11 +42,11 @@ export default function skills() {
                     './icons/npm.png',
                     './icons/node.png',
                     './icons/python.png',
-                    './icons/sql.png',
+                    './icons/sql.jpg',
                     './icons/pandas.png',
                     './icons/numpy.png',
-                    './icons/scikit-learn.png',
-                    './icons/tensorflow.png',
+                    './icons/sklearn.png',
+                    './icons/tensorflow.jpg',
                     './icons/neo4j.png'
                 ]}
                 trigger="hover"

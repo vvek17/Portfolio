@@ -8,8 +8,8 @@ import toast from "react-hot-toast"
 function Contact() {
     const handleResumeDownload = () => {
         const link = document.createElement("a");
-        link.href = "/punit's_resume.pdf";
-        link.download = "punit's__resume.pdf";
+        link.href = "/Vivek_Solanki_resume.pdf";  // ✅ Fixed path
+        link.download = "Vivek_Solanki_resume.pdf";  // ✅ Updated filename
         link.click();
         setTimeout(() => {
             toast.success("Resume Downloaded")
@@ -18,7 +18,7 @@ function Contact() {
     };
 
     const handleMail = () => {
-        window.location.href = "mailto:viveksolanki.17122002@gmail.com";
+        window.location.href = "mailto:vivek.s171202@gmail.com";
     }
 
     const handleCall = () => {
@@ -57,7 +57,7 @@ function Contact() {
                             <FaEnvelope className={styles.icon} />
                         </div>
                         <div className={styles.textWrapper}>
-                            <a>viveksolanki.17122002@gmail.com</a>
+                            <a>vivek.s171202@gmail.com</a>
                         </div>
                     </button>
 

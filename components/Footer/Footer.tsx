@@ -68,10 +68,10 @@ function Footer() {
                     <div className={styles.contactColumn}>
                         <h3 className={styles.columnTitle}>Get in Touch</h3>
                         <div className={styles.contactInfo}>
-                            <a href="mailto:your.email@example.com" className={styles.contactLink}>
-                                <FaEnvelope /> viveksolanki.17122002@gmail.com
+                            <a href="mailto:vivek.s171202@gmail.com" className={styles.contactLink}>
+                                <FaEnvelope /> vivek.s171202@gmail.com
                             </a>
-                            <a href="tel:+917285071388" className={styles.contactLink}>
+                            <a href="tel:+12673017876" className={styles.contactLink}>
                                 <FaPhoneAlt /> +1 2673017876
                             </a>
 
