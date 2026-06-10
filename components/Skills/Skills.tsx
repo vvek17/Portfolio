@@ -41,7 +41,6 @@ export default function skills() {
                     './icons/python.png',
                     './icons/npm.png',
                     './icons/node.png',
-                    './icons/python.png',
                     './icons/sql.jpg',
                     './icons/pandas.png',
                     './icons/numpy.png',
@@ -50,7 +49,7 @@ export default function skills() {
                     './icons/neo4j.png'
                 ]}
                 trigger="hover"
-                backgroundColor="transparent"
+                backgroundColor="transparent"       
                 wireframes={false}
                 gravity={0.56}
                 imageSize={70}
@@ -62,4 +61,4 @@ export default function skills() {
 
         </section>
     );
-}
+}   
