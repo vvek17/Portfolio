@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import styles from "./Skills.module.scss"
 import Shuffle from "../Shuffle";
 import FallingText from "../FallingText";

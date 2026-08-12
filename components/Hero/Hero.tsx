@@ -33,7 +33,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
             >
-                Building data-driven applications and intelligent systems with SQL, Python, Machine Learning, and Artificial Intelligence. <span>alive</span>.
+                Building data-driven applications and intelligent systems with SQL, Python, Machine Learning, and Artificial Intelligence.
             </motion.p>
 
             <motion.div

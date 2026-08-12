@@ -5,16 +5,6 @@ import styles from "./About.module.scss"
 
 
 export default function About() {
-    // const content = [
-    //     "Hello there!  I’m Punit Vadhwani, a passionate React and Next.js developer with a strong foundation in HTML, CSS, and JavaScript. My journey in web development began with pure curiosity—I was fascinated by the instant impact of code on a webpage, from changing a button color to creating interactive elements. This fascination quickly turned into a dedication to crafting seamless and dynamic user experiences.",
-    //     "Starting from the basics of HTML, CSS, and JS, I gradually moved to React, where I found a perfect balance of structure, flexibility, and creativity. Diving into Next.js allowed me to build modern, high-performance, and SEO-friendly applications, which further enhanced my skills as a frontend developer.",
-    //     "Over the years, I have worked on diverse projects, ranging from small interactive components to complete web applications. Each project taught me the importance of clean, maintainable code, responsive design, and attention to detail in UI/UX. I thrive on challenges that push me to learn new technologies and implement creative solutions that delight users.",
-    //     "Beyond coding, I’m deeply interested in modern web trends, animation, and interactive design. I enjoy blending technical expertise with creativity, making interfaces not just functional but visually engaging and memorable. I approach every project with a user-first mindset, ensuring that every interaction feels intuitive and every design element serves a purpose.",
-    //     "I’m constantly exploring new libraries, tools, and techniques, always aiming to refine my craft. My goal is to build web applications that are fast, beautiful, and enjoyable to use, while also continuously improving my skills as a frontend engineer.",
-    //     "Whether it’s collaborating on a team or developing solo projects, I bring curiosity, dedication, and precision to every line of code I write. I believe that technology is most powerful when it’s thoughtfully designed, and I aim to create experiences that users love to interact with."
-    // ];
-
-
     const content = [
         "Hey! I'm Vivek Solanki, a Master's student in Computational Data Science at Temple University with interests in Software Engineering, Machine Learning, Artificial Intelligence, Data Science, SQL, and Cloud Computing.", 
 

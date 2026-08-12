@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import styles from "./Footer.module.scss"
-import { FaPhoneAlt, FaHeart, FaEnvelope, FaLocationArrow, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt, FaHeart, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 function Footer() {
@@ -34,7 +34,7 @@ function Footer() {
                     <div className={styles.brandColumn}>
                         <h2 className={styles.logo}>Vivek Solanki</h2>
                         <p className={styles.tagline}>
-                            Belives in building one component at a time.
+                            Believes in building one component at a time.
                         </p>
 
                         <button
@@ -42,7 +42,7 @@ function Footer() {
                         >
                             <p className={styles.cta}
                                 onClick={() => scrollToSection('contact')}>
-                                Let's Work Together
+                                Let&apos;s Work Together
                             </p>
                         </button>
 

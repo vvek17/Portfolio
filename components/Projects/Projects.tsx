@@ -8,6 +8,24 @@ import { motion } from "framer-motion";
 const projects = [
     {
         "id": 1,
+        "title": "Applai",
+        "image": "/images/applai.svg",
+        "alt": "applai",
+        "description": "An autonomous AI job-application agent that scrapes listings from LinkedIn, Indeed, Greenhouse, Lever, and Workday, then uses Claude to tailor a resume and cover letter for each posting, scores ATS fit, and submits the application automatically.",
+        "technologies": ["JavaScript", "Node.js", "Claude API", "Web Scraping", "Automation"],
+        "url": "https://github.com/vvek17/Applai-"
+    },
+    {
+        "id": 2,
+        "title": "Lyra AI",
+        "image": "/images/lyraai.png",
+        "alt": "lyra-ai",
+        "description": "A full-stack text-to-speech and speech-to-speech web app covering the pipeline behind tools like ElevenLabs: typed text becomes natural speech in a chosen voice and language, and spoken recordings can be transcribed, translated, and re-spoken in another language. Includes accounts, credit tracking, and project-based history, built entirely on free-tier services.",
+        "technologies": ["Next.js", "Node.js", "Express", "JWT Auth", "Speech-to-Text", "Text-to-Speech"],
+        "url": "https://github.com/vvek17/LyraAI"
+    },
+    {
+        "id": 3,
         "title": "Customer Segmentation",
         "image": "/images/custmor.jpg",
         "alt": "customer-segmentation",
@@ -16,7 +34,7 @@ const projects = [
         "url": "https://github.com/vvek17/Customer-segmentation-"
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "Gulf Laser Tag",
         "image": "/images/gulflasertag.png",
         "alt": "gulflasertag",
@@ -25,7 +43,7 @@ const projects = [
         "url": "https://www.gulflasertag.net/"
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "A Comparative Study of Faithfulness Detection Methodsin Retrieval-Augmented Generation Systems",
         "image": "/images/rag.jpg",
         "alt": "RAG-Hallucination-Detection",
@@ -34,7 +52,7 @@ const projects = [
         "url": "https://github.com/vvek17/A-Comparative-Study-of-Faithfulness-Detection-Methods-.pdf"
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Voise.ai",
         "image": "/images/voise.png",
         "alt": "voise",
@@ -43,13 +61,40 @@ const projects = [
         "url": "https://voise.ai/"
     },
     {
-        "id": 5,
+        "id": 7,
         "title": "Neo4j Baseball Knowledge Graph",
         "image": "/images/neo4j_baseball.jpg",
         "alt": "neo4j-baseball-graph",
         "description": "Full-stack knowledge graph platform using Neo4j AuraDB to model 20+ college baseball programs. Ingests roster data from 800+ players, 40 coaches, and conference hierarchies. Features transfer detection, semantic player queries, and graph visualization with Cypher.",
         "technologies": ["Neo4j", "Cypher", "Python", "Selenium", "JavaScript", "Graph Database"],
         "url": "https://github.com/vvek17/DimondKG-Project"
+    },
+    {
+        "id": 8,
+        "title": "ScriptToVid",
+        "image": "/images/scripttovid.png",
+        "alt": "scripttovid",
+        "description": "Freelance frontend build for an AI-driven storytelling platform that turns written scripts or audio files into narrated videos, with an in-browser video generator for scripting, characters, and backgrounds.",
+        "technologies": ["Next.js", "React.js", "UI/UX Design"],
+        "url": ""
+    },
+    {
+        "id": 9,
+        "title": "Taylor Sterling",
+        "image": "/images/taylorsterling.png",
+        "alt": "taylorsterling",
+        "description": "Freelance marketing website for Taylor Sterling, an executive search firm serving the Middle East's built-environment sector, built to showcase their leadership placement services and press coverage.",
+        "technologies": ["Next.js", "React.js", "SCSS", "UI/UX Design"],
+        "url": ""
+    },
+    {
+        "id": 10,
+        "title": "Purposeful Network",
+        "image": "/images/bitcorpen.png",
+        "alt": "bitcorpen",
+        "description": "Freelance landing page for a professional networking community platform, designed to drive membership sign-ups with a clean, welcoming brand identity.",
+        "technologies": ["Next.js", "React.js", "UI/UX Design"],
+        "url": ""
     }
 
 
@@ -112,8 +157,8 @@ function Projects() {
                         transition={{ duration: 0.6, delay: index * 0.2 }}
                         onMouseMove={(e) => handleMouseMove(e, e.currentTarget)}
                         onMouseLeave={(e) => handleMouseLeave(e.currentTarget)}
-                        onClick={() => window.open(project.url, '_blank', 'noopener,noreferrer')}
-                        style={{ cursor: 'pointer' }}
+                        onClick={project.url ? () => window.open(project.url, '_blank', 'noopener,noreferrer') : undefined}
+                        style={{ cursor: project.url ? 'pointer' : 'default' }}
                     >
                         <div className={styles.projectImage}>
                             <img src={project.image} alt={project.alt} />

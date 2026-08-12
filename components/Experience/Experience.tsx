@@ -16,7 +16,7 @@ const experiences = [
         id: 2,
         title: "FRONTEND DEVELOPER INTERN",
         company: "GatiSoftech",
-        duration: "Febuary 2024 - May 2024 ",
+        duration: "February 2024 - May 2024",
         description:
             "Worked as a Frontend Developer Intern, collaborating with senior developers to build responsive Angular applications and transform wireframes into user-friendly interfaces. As my undergraduate final project, I independently designed and developed a frontend website, applying modern web development and UI/UX principles."
     },

@@ -8,8 +8,6 @@ import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/Skills/Skills";
 import { Toaster } from "react-hot-toast"
-import styles from "./Home.module.scss"
-import { LuLaptopMinimal } from "react-icons/lu";
 
 export default function Home() {
   return (
