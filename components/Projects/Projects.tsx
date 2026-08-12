@@ -7,15 +7,6 @@ import { motion } from "framer-motion";
 
 const projects = [
     {
-        "id": 1,
-        "title": "Applai",
-        "image": "/images/applai.svg",
-        "alt": "applai",
-        "description": "An autonomous AI job-application agent that scrapes listings from LinkedIn, Indeed, Greenhouse, Lever, and Workday, then uses Claude to tailor a resume and cover letter for each posting, scores ATS fit, and submits the application automatically.",
-        "technologies": ["JavaScript", "Node.js", "Claude API", "Web Scraping", "Automation"],
-        "url": "https://github.com/vvek17/Applai-"
-    },
-    {
         "id": 2,
         "title": "Lyra AI",
         "image": "/images/lyraai.png",
