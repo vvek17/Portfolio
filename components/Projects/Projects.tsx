@@ -68,33 +68,6 @@ const projects = [
         "description": "Full-stack knowledge graph platform using Neo4j AuraDB to model 20+ college baseball programs. Ingests roster data from 800+ players, 40 coaches, and conference hierarchies. Features transfer detection, semantic player queries, and graph visualization with Cypher.",
         "technologies": ["Neo4j", "Cypher", "Python", "Selenium", "JavaScript", "Graph Database"],
         "url": "https://github.com/vvek17/DimondKG-Project"
-    },
-    {
-        "id": 8,
-        "title": "ScriptToVid",
-        "image": "/images/scripttovid.png",
-        "alt": "scripttovid",
-        "description": "Freelance frontend build for an AI-driven storytelling platform that turns written scripts or audio files into narrated videos, with an in-browser video generator for scripting, characters, and backgrounds.",
-        "technologies": ["Next.js", "React.js", "UI/UX Design"],
-        "url": ""
-    },
-    {
-        "id": 9,
-        "title": "Taylor Sterling",
-        "image": "/images/taylorsterling.png",
-        "alt": "taylorsterling",
-        "description": "Freelance marketing website for Taylor Sterling, an executive search firm serving the Middle East's built-environment sector, built to showcase their leadership placement services and press coverage.",
-        "technologies": ["Next.js", "React.js", "SCSS", "UI/UX Design"],
-        "url": ""
-    },
-    {
-        "id": 10,
-        "title": "Purposeful Network",
-        "image": "/images/bitcorpen.png",
-        "alt": "bitcorpen",
-        "description": "Freelance landing page for a professional networking community platform, designed to drive membership sign-ups with a clean, welcoming brand identity.",
-        "technologies": ["Next.js", "React.js", "UI/UX Design"],
-        "url": ""
     }
 
 
