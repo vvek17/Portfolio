@@ -12,7 +12,9 @@ export default function About() {
 
         "I've worked as a Frontend Developer Intern, a Python Developer Intern, and currently support technology operations at Temple University. These experiences have helped me develop strong technical, analytical, and problem-solving skills while working with diverse technologies and real-world systems.",
 
-        "Some of my favorite projects include Voise.ai, an AI-powered text-to-speech platform; a cloud-based image processing application built with Django, AWS EC2, and Amazon S3; a Financial Transaction NER system using spaCy and NLP; and a Recently, I researched hallucination detection in RAG systems using Hugging Face transformer models, including BART and DeBERTa, comparing zero-shot classification and fine-tuning approaches to evaluate the reliability of AI-generated responses.",
+        "I'm also currently a contributor to HOOT (Helpful Owl Of Temple), a research project under Temple's OpenOwls student org building a citation-backed RAG assistant that answers faculty HR and policy questions using only Temple's own published documents, with a strict no-hallucination guardrail.",
+
+        "Some of my favorite projects include Voise.ai, an AI-powered text-to-speech platform; a cloud-based image processing application built with Django, AWS EC2, and Amazon S3; a Financial Transaction NER system using spaCy and NLP; and most recently, I researched hallucination detection in RAG systems using Hugging Face transformer models, including BART and DeBERTa, comparing zero-shot classification and fine-tuning approaches to evaluate the reliability of AI-generated responses.",
 
         "I'm passionate about building impactful solutions at the intersection of software, data, and AI. Whether it's developing applications, designing databases, creating machine learning models, or deploying cloud-based systems, I enjoy learning new technologies and solving meaningful problems."
 

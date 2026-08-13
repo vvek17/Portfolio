@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="545" viewBox="0 0 800 545">
+  <defs>
+    <linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#101827"/>
+    </linearGradient>
+    <linearGradient id="haccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffff"/>
+      <stop offset="100%" stop-color="#7c5cff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="545" fill="url(#hbg)"/>
+
+  <g stroke="#1f2937" stroke-width="1">
+    <line x1="0" y1="140" x2="800" y2="140"/>
+    <line x1="0" y1="280" x2="800" y2="280"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="200" y1="0" x2="200" y2="545"/>
+    <line x1="400" y1="0" x2="400" y2="545"/>
+    <line x1="600" y1="0" x2="600" y2="545"/>
+  </g>
+
+  <g transform="translate(300 272)">
+    <circle cx="0" cy="0" r="86" fill="none" stroke="url(#haccent)" stroke-width="3" opacity="0.9"/>
+    <circle cx="-30" cy="-10" r="13" fill="#0a0a0a" stroke="#00ffff" stroke-width="3"/>
+    <circle cx="30" cy="-10" r="13" fill="#0a0a0a" stroke="#7c5cff" stroke-width="3"/>
+    <circle cx="-30" cy="-10" r="4" fill="#00ffff"/>
+    <circle cx="30" cy="-10" r="4" fill="#7c5cff"/>
+    <path d="M -12 18 L 0 32 L 12 18 Z" fill="url(#haccent)"/>
+    <path d="M -70 -55 L -35 -30" stroke="url(#haccent)" stroke-width="3" fill="none"/>
+    <path d="M 70 -55 L 35 -30" stroke="url(#haccent)" stroke-width="3" fill="none"/>
+  </g>
+
+  <g transform="translate(470 200)" fill="none" stroke="#2a2a2a" stroke-width="2">
+    <rect x="0" y="0" width="170" height="210" rx="10" fill="#0f0f0f" stroke="url(#haccent)" stroke-opacity="0.6"/>
+    <line x1="20" y1="35" x2="150" y2="35" stroke="#3a3a3a"/>
+    <line x1="20" y1="60" x2="150" y2="60" stroke="#3a3a3a"/>
+    <line x1="20" y1="85" x2="120" y2="85" stroke="#3a3a3a"/>
+    <line x1="20" y1="125" x2="150" y2="125" stroke="url(#haccent)" stroke-opacity="0.8"/>
+    <line x1="20" y1="150" x2="150" y2="150" stroke="url(#haccent)" stroke-opacity="0.8"/>
+    <line x1="20" y1="175" x2="100" y2="175" stroke="url(#haccent)" stroke-opacity="0.8"/>
+  </g>
+
+  <line x1="386" y1="272" x2="470" y2="272" stroke="url(#haccent)" stroke-width="2" opacity="0.7"/>
+</svg>

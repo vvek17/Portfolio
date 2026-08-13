@@ -7,6 +7,15 @@ import { motion } from "framer-motion";
 
 const projects = [
     {
+        "id": 1,
+        "title": "HOOT — Helpful Owl Of Temple",
+        "image": "/images/hoot.svg",
+        "alt": "hoot-research",
+        "description": "An ongoing research collaboration under Temple's OpenOwls student org: a citation-backed RAG assistant that answers Temple faculty HR, benefits, and policy questions using only Temple's own published documents, each answer linked back to its source. Built with a deferral guard so the LLM stays silent rather than guessing when retrieval comes up empty, section-aware chunking, and BM25 + FlashRank re-ranking on top of dense retrieval.",
+        "technologies": ["Python", "LangChain", "Claude API", "ChromaDB", "Sentence Transformers", "Streamlit", "RAG"],
+        "url": "https://github.com/OpenOwls-at-Temple/hoot"
+    },
+    {
         "id": 2,
         "title": "Lyra AI",
         "image": "/images/lyraai.png",
