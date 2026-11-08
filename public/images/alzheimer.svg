@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="545" viewBox="0 0 800 545">
+  <defs>
+    <linearGradient id="zbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#101827"/>
+    </linearGradient>
+    <linearGradient id="zaccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffff"/>
+      <stop offset="100%" stop-color="#7c5cff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="545" fill="url(#zbg)"/>
+
+  <g stroke="#1f2937" stroke-width="1">
+    <line x1="0" y1="140" x2="800" y2="140"/>
+    <line x1="0" y1="280" x2="800" y2="280"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="200" y1="0" x2="200" y2="545"/>
+    <line x1="400" y1="0" x2="400" y2="545"/>
+    <line x1="600" y1="0" x2="600" y2="545"/>
+  </g>
+
+  <g transform="translate(290 272)">
+    <path d="M -18 -116 C -74 -122 -124 -84 -124 -34 C -148 -10 -144 34 -116 50
+             C -118 94 -80 122 -40 112 C -28 128 -2 128 -18 -116 Z"
+          fill="none" stroke="url(#zaccent)" stroke-width="3" opacity="0.9"/>
+    <path d="M 18 -116 C 74 -122 124 -84 124 -34 C 148 -10 144 34 116 50
+             C 118 94 80 122 40 112 C 28 128 2 128 18 -116 Z"
+          fill="none" stroke="url(#zaccent)" stroke-width="3" opacity="0.5"/>
+    <g stroke="#2f3b4f" stroke-width="2" fill="none" opacity="0.8">
+      <path d="M -90 -60 C -56 -44 -58 -8 -92 6"/>
+      <path d="M -70 48 C -40 36 -30 68 -58 86"/>
+      <path d="M 90 -60 C 56 -44 58 -8 92 6"/>
+      <path d="M 70 48 C 40 36 30 68 58 86"/>
+    </g>
+    <g fill="#00ffff">
+      <circle cx="-86" cy="-46" r="5"/>
+      <circle cx="-54" cy="12" r="5"/>
+      <circle cx="-74" cy="70" r="5"/>
+      <circle cx="-24" cy="-72" r="5"/>
+    </g>
+    <g fill="#7c5cff" opacity="0.75">
+      <circle cx="86" cy="-46" r="5"/>
+      <circle cx="54" cy="12" r="5"/>
+      <circle cx="74" cy="70" r="5"/>
+    </g>
+    <g stroke="url(#zaccent)" stroke-width="1.5" opacity="0.55">
+      <line x1="-86" y1="-46" x2="-54" y2="12"/>
+      <line x1="-54" y1="12" x2="-74" y2="70"/>
+      <line x1="-24" y1="-72" x2="-54" y2="12"/>
+      <line x1="-86" y1="-46" x2="-24" y2="-72"/>
+    </g>
+  </g>
+
+  <g transform="translate(470 196)" font-family="monospace">
+    <rect x="0" y="0" width="250" height="160" rx="10" fill="#0f0f0f" stroke="url(#zaccent)" stroke-opacity="0.5" stroke-width="2"/>
+    <circle cx="26" cy="32" r="7" fill="#00ffff"/>
+    <line x1="48" y1="32" x2="214" y2="32" stroke="#3a4a63" stroke-width="2"/>
+    <circle cx="26" cy="66" r="7" fill="#7c5cff"/>
+    <line x1="48" y1="66" x2="186" y2="66" stroke="#3a4a63" stroke-width="2"/>
+    <circle cx="26" cy="100" r="7" fill="#00ffff" opacity="0.6"/>
+    <line x1="48" y1="100" x2="204" y2="100" stroke="#3a4a63" stroke-width="2"/>
+    <circle cx="26" cy="134" r="7" fill="#2f3b4f"/>
+    <line x1="48" y1="134" x2="150" y2="134" stroke="#2a3545" stroke-width="2" stroke-dasharray="6 6"/>
+
+    <text x="0" y="202" fill="#55657a" font-size="16">agentic workflow &#183; in progress</text>
+  </g>
+</svg>

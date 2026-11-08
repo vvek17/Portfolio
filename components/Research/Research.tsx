@@ -6,6 +6,32 @@ import { motion } from "framer-motion";
 const research = [
     {
         id: 1,
+        title: "ALERT — Phishing-Susceptibility Digital Twin",
+        image: "/images/alert.svg",
+        alt: "alert-digital-twin",
+        venue: "IHR Lab, Temple University · Advisor: Prof. Huanmei Wu",
+        period: "Oct 2026 — Present",
+        description:
+            "Staff at a fictional hospital receive simulated phishing and legitimate email. ALERT learns to predict whether each person will click, report, or ignore a message, and it is never allowed to see why they really do it — it only counts what it observes, as P(click) = yes / (yes + no). The point of the constraint is to find out how far pure observation gets you, so I benchmarked the counting twin head-to-head against a scikit-learn pipeline on the same data and graded both on emails they had never seen. Supporting it is an email generator that builds fresh phishing from genuine messages by swapping entities and applying the modifications that make a message phishy, a SQLite schema seeding the personas, and a Streamlit app with an instructor workspace. Backend and frontend are strictly split: if a module draws it is frontend, if it decides it is backend, and nothing in backend imports Streamlit. Every name, domain, and record is fabricated.",
+        highlights: ["25 simulated staff", "Counting twin benchmarked against scikit-learn", "Graded on held-out emails", "Fully synthetic data"],
+        technologies: ["Python", "scikit-learn", "pandas", "NumPy", "Streamlit", "Altair", "SQLite", "pytest"],
+        url: "https://github.com/vvek17/Digital_twin",
+    },
+    {
+        id: 2,
+        title: "Alzheimer's AI Agent — M.S. Capstone",
+        image: "/images/alzheimer.svg",
+        alt: "alzheimers-ai-agent",
+        venue: "Temple University · Advisor: Prof. Xinghua Mindy Shi",
+        period: "In progress",
+        description:
+            "My Master's capstone, advised by Prof. Xinghua Mindy Shi: an agentic AI system for Alzheimer's research. The work is underway and I'll write up what it does, and what it turns out to be good and bad at, as it takes shape.",
+        highlights: [],
+        technologies: ["Agentic AI", "LLM"],
+        url: "",
+    },
+    {
+        id: 3,
         title: "HOOT — Helpful Owl Of Temple",
         image: "/images/hoot.svg",
         alt: "hoot-research",
@@ -18,7 +44,7 @@ const research = [
         url: "https://github.com/OpenOwls-at-Temple/hoot",
     },
     {
-        id: 2,
+        id: 4,
         title: "Chest X-Ray Classification for an Agentic AI System",
         image: "/images/chestxray.svg",
         alt: "chest-xray-agentic-ai",
@@ -31,7 +57,7 @@ const research = [
         url: "https://github.com/vvek17/chest-xray-agentic-ai",
     },
     {
-        id: 3,
+        id: 5,
         title: "A Comparative Study of Faithfulness Detection Methods in RAG",
         image: "/images/rag.jpg",
         alt: "rag-hallucination-detection",
@@ -42,19 +68,6 @@ const research = [
         highlights: ["10,000 HaluEval examples", "68.8% zero-shot, no training", "97.1% accuracy after root-causing the fine-tune", "Degenerate-training bug diagnosed, not guessed"],
         technologies: ["PyTorch", "Hugging Face", "DeBERTa-v3", "BART-MNLI", "SummaC-Zero", "HaluEval", "LLM-as-Judge"],
         url: "https://github.com/vvek17/A-Comparative-Study-of-Faithfulness-Detection-Methods-",
-    },
-    {
-        id: 4,
-        title: "ALERT — Phishing-Susceptibility Digital Twin",
-        image: "/images/alert.svg",
-        alt: "alert-digital-twin",
-        venue: "IHR Lab, Temple University · Advisor: Prof. Huanmei Wu",
-        period: "Oct 2026 — Present",
-        description:
-            "Staff at a fictional hospital receive simulated phishing and legitimate email. ALERT learns to predict whether each person will click, report, or ignore a message, and it is never allowed to see why they really do it — it only counts what it observes, as P(click) = yes / (yes + no). The point of the constraint is to find out how far pure observation gets you, so I benchmarked the counting twin head-to-head against a scikit-learn pipeline on the same data and graded both on emails they had never seen. Supporting it is an email generator that builds fresh phishing from genuine messages by swapping entities and applying the modifications that make a message phishy, a SQLite schema seeding the personas, and a Streamlit app with an instructor workspace. Backend and frontend are strictly split: if a module draws it is frontend, if it decides it is backend, and nothing in backend imports Streamlit. Every name, domain, and record is fabricated.",
-        highlights: ["25 simulated staff", "Counting twin benchmarked against scikit-learn", "Graded on held-out emails", "Fully synthetic data"],
-        technologies: ["Python", "scikit-learn", "pandas", "NumPy", "Streamlit", "Altair", "SQLite", "pytest"],
-        url: "https://github.com/vvek17/Digital_twin",
     },
 ];
 
@@ -120,11 +133,13 @@ function Research() {
                                 <span className={styles.period}>{item.period}</span>
                             </div>
                             <p>{item.description}</p>
-                            <ul className={styles.highlights}>
-                                {item.highlights.map((h, i) => (
-                                    <li key={i}>{h}</li>
-                                ))}
-                            </ul>
+                            {item.highlights.length > 0 && (
+                                <ul className={styles.highlights}>
+                                    {item.highlights.map((h, i) => (
+                                        <li key={i}>{h}</li>
+                                    ))}
+                                </ul>
+                            )}
                             <div className={styles.researchTechnologies}>
                                 {item.technologies.map((tech, techIndex) => (
                                     <span key={techIndex} className={styles.tech}>
