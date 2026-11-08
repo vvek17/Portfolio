@@ -16,7 +16,7 @@ const experiences = [
         id: 2,
         title: "PYTHON DATA ANALYST INTERN",
         company: "JR Dreams",
-        duration: "June 2024 - September 2024",
+        duration: "January 2023 - January 2024",
         description:
             "I worked on large, messy datasets in Python with Pandas and NumPy, processing 45,000+ bug reports and help-desk tickets. Automating the cleaning and validation steps lifted data completeness by 40% for downstream ML inputs, and debugging the pipelines brought recurring errors down from 20 a week to 5, saving the team 8+ engineering hours every week.",
     },
