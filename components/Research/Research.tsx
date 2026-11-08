@@ -25,10 +25,10 @@ const research = [
         venue: "Temple University · Advisor: Prof. Xinghua Mindy Shi",
         period: "In progress",
         description:
-            "My Master's capstone, advised by Prof. Xinghua Mindy Shi: an agentic AI system for Alzheimer's research. The work is underway and I'll write up what it does, and what it turns out to be good and bad at, as it takes shape.",
-        highlights: [],
-        technologies: ["Agentic AI", "LLM"],
-        url: "",
+            "My Master's capstone, advised by Prof. Xinghua Mindy Shi: an agentic AI system for Alzheimer's, built so that every diagnostic tool it calls can be tested on its own. The imaging tool is the part that exists today, and I built and measured it on chest X-rays first, across four classes: Covid-19, Normal, Pneumonia and Tuberculosis. Nothing in it is fine-tuned. I froze Google's MedSigLIP encoder and trained only a linear probe on its embeddings. That reached 95.6% on a 2,791-image test set. Frozen DINOv2 scored 88.8% and RAD-DINO 87.9% under the same protocol. The same encoder used zero-shot scores 48.6%, so nearly all of the accuracy comes from the probe. I also ran a prompt-engineering study on MedGemma, with a strict 10/20/70 try-validate-test photo split. Adding one solved example per class took Normal vs Pneumonia to 90.71% on a 140-image held-out test (macro F1 0.9071, MCC 0.8144). Two lessons stuck. Short prompts beat elaborate ones on a small model. And naming a sign like “hazy” in the prompt makes the model see it in healthy lungs. The agent layer and the Alzheimer's-specific work are in progress, and I'll write them up as they take shape.",
+        highlights: ["Imaging tool: 95.6% across four classes", "98.35% Normal vs Pneumonia", "MedGemma few-shot: 90.71%, macro F1 0.9071", "2,791-image test set", "No fine-tuning — frozen encoder"],
+        technologies: ["Agentic AI", "PyTorch", "MedSigLIP", "MedGemma", "DINOv2", "RAD-DINO", "Hugging Face", "scikit-learn", "Streamlit", "Prompt Engineering"],
+        url: "https://github.com/vvek17/chest-xray-agentic-ai",
     },
     {
         id: 3,
@@ -45,19 +45,6 @@ const research = [
     },
     {
         id: 4,
-        title: "Chest X-Ray Classification for an Agentic AI System",
-        image: "/images/chestxray.svg",
-        alt: "chest-xray-agentic-ai",
-        venue: "Temple University · M.S. research",
-        period: "Oct 2026 — Present",
-        description:
-            "Classifying chest X-rays as Covid-19, Normal, Pneumonia or Tuberculosis. It is the imaging tool for a planned agentic AI system. Nothing here is fine-tuned. I froze Google's MedSigLIP encoder and trained only a linear probe on its embeddings. That reached 95.6% on a 2,791-image test set. Frozen DINOv2 scored 88.8% and RAD-DINO 87.9% under the same protocol. The same encoder used zero-shot scores 48.6%, so nearly all of the accuracy comes from the probe. I also ran a prompt-engineering study on MedGemma, with a strict 10/20/70 try-validate-test photo split. Adding one solved example per class took Normal vs Pneumonia to 90.71% on a 140-image held-out test (macro F1 0.9071, MCC 0.8144). Two lessons stuck. Short prompts beat elaborate ones on a small model. And naming a sign like “hazy” in the prompt makes the model see it in healthy lungs.",
-        highlights: ["95.6% four-class accuracy", "98.35% Normal vs Pneumonia", "MedGemma few-shot: 90.71%, macro F1 0.9071", "2,791-image test set", "No fine-tuning — frozen encoder"],
-        technologies: ["PyTorch", "MedSigLIP", "MedGemma", "DINOv2", "RAD-DINO", "Hugging Face", "scikit-learn", "Streamlit", "Prompt Engineering"],
-        url: "https://github.com/vvek17/chest-xray-agentic-ai",
-    },
-    {
-        id: 5,
         title: "A Comparative Study of Faithfulness Detection Methods in RAG",
         image: "/images/rag.jpg",
         alt: "rag-hallucination-detection",
