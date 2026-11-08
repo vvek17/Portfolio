@@ -6,19 +6,27 @@ import Shuffle from "../Shuffle";
 const experiences = [
     {
         id: 1,
-        title: "PYTHON DATA ANALYST INTERN",
-        company: " JR Dreams",
-        duration: "June 2024 - September 2024",
+        title: "CLASSROOM TECHNOLOGY SUPPORT SPECIALIST",
+        company: "Temple University",
+        duration: "August 2025 - Present",
         description:
-            "As a Python Developer Intern, I worked with large-scale datasets using Python, Pandas, and NumPy to improve data quality and streamline processing workflows. By automating data-cleaning and validation tasks, I enhanced data completeness, reduced pipeline errors, and supported data-driven decision-making for machine learning and analytics projects.",
+            "I keep Temple's teaching spaces running, handling 20+ support requests a week across hardware, software, network and AV, and resolving 95%+ of them on time. Most of it is diagnosing a problem fast while a class waits, which has made me a good deal quicker at narrowing down where a fault actually is.",
     },
     {
         id: 2,
+        title: "PYTHON DATA ANALYST INTERN",
+        company: "JR Dreams",
+        duration: "June 2024 - September 2024",
+        description:
+            "I worked on large, messy datasets in Python with Pandas and NumPy, processing 45,000+ bug reports and help-desk tickets. Automating the cleaning and validation steps lifted data completeness by 40% for downstream ML inputs, and debugging the pipelines brought recurring errors down from 20 a week to 5, saving the team 8+ engineering hours every week.",
+    },
+    {
+        id: 3,
         title: "FRONTEND DEVELOPER INTERN",
         company: "GatiSoftech",
         duration: "February 2024 - May 2024",
         description:
-            "Worked as a Frontend Developer Intern, collaborating with senior developers to build responsive Angular applications and transform wireframes into user-friendly interfaces. As my undergraduate final project, I independently designed and developed a frontend website, applying modern web development and UI/UX principles."
+            "Built responsive Angular applications for a diamond-industry client, turning wireframes into cross-browser UI components alongside senior developers. For my undergraduate final project I designed and built a frontend website on my own, applying what I had picked up about modern web development and UI/UX.",
     },
 ];
 

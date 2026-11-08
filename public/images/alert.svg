@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="545" viewBox="0 0 800 545">
+  <defs>
+    <linearGradient id="abg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#101827"/>
+    </linearGradient>
+    <linearGradient id="aaccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffff"/>
+      <stop offset="100%" stop-color="#7c5cff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="545" fill="url(#abg)"/>
+
+  <g stroke="#1f2937" stroke-width="1">
+    <line x1="0" y1="140" x2="800" y2="140"/>
+    <line x1="0" y1="280" x2="800" y2="280"/>
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="200" y1="0" x2="200" y2="545"/>
+    <line x1="400" y1="0" x2="400" y2="545"/>
+    <line x1="600" y1="0" x2="600" y2="545"/>
+  </g>
+
+  <g transform="translate(205 272)">
+    <rect x="-120" y="-84" width="240" height="168" rx="12" fill="#0f0f0f" stroke="url(#aaccent)" stroke-opacity="0.65" stroke-width="2"/>
+    <path d="M -120 -84 L 0 14 L 120 -84" fill="none" stroke="url(#aaccent)" stroke-width="2.5" opacity="0.85"/>
+    <g transform="translate(78 -86)">
+      <circle cx="0" cy="0" r="27" fill="#0a0a0a" stroke="#7c5cff" stroke-width="3"/>
+      <line x1="0" y1="-13" x2="0" y2="5" stroke="#7c5cff" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="0" cy="14" r="2.6" fill="#7c5cff"/>
+    </g>
+  </g>
+
+  <g transform="translate(360 272)" stroke="url(#aaccent)" stroke-width="2" opacity="0.6" fill="none">
+    <path d="M 0 0 L 70 -82"/>
+    <path d="M 0 0 L 70 0"/>
+    <path d="M 0 0 L 70 82"/>
+  </g>
+
+  <g transform="translate(455 272)" font-family="monospace">
+    <g>
+      <circle cx="18" cy="-82" r="18" fill="#0f0f0f" stroke="#00ffff" stroke-width="2.5"/>
+      <text x="48" y="-76" fill="#e6edf5" font-size="19">clicks</text>
+      <rect x="128" y="-92" width="150" height="13" rx="6.5" fill="#1a2230"/>
+      <rect x="128" y="-92" width="104" height="13" rx="6.5" fill="url(#aaccent)"/>
+    </g>
+    <g>
+      <circle cx="18" cy="0" r="18" fill="#0f0f0f" stroke="#7c5cff" stroke-width="2.5"/>
+      <text x="48" y="6" fill="#e6edf5" font-size="19">reports</text>
+      <rect x="128" y="-10" width="150" height="13" rx="6.5" fill="#1a2230"/>
+      <rect x="128" y="-10" width="62" height="13" rx="6.5" fill="url(#aaccent)"/>
+    </g>
+    <g>
+      <circle cx="18" cy="82" r="18" fill="#0f0f0f" stroke="#2f3b4f" stroke-width="2.5"/>
+      <text x="48" y="88" fill="#e6edf5" font-size="19">ignores</text>
+      <rect x="128" y="72" width="150" height="13" rx="6.5" fill="#1a2230"/>
+      <rect x="128" y="72" width="38" height="13" rx="6.5" fill="url(#aaccent)"/>
+    </g>
+
+    <text x="0" y="150" fill="#55657a" font-size="16">P(click) = yes / (yes + no)</text>
+    <text x="0" y="178" fill="#55657a" font-size="16">25 staff &#183; held-out emails</text>
+  </g>
+</svg>

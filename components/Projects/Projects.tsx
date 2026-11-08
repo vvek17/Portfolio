@@ -8,71 +8,49 @@ import { motion } from "framer-motion";
 const projects = [
     {
         "id": 1,
-        "title": "HOOT — Helpful Owl Of Temple",
-        "image": "/images/hoot.svg",
-        "alt": "hoot-research",
-        "description": "An ongoing research collaboration under Temple's OpenOwls student org: a citation-backed RAG assistant that answers Temple faculty HR, benefits, and policy questions using only Temple's own published documents, each answer linked back to its source. Built with a deferral guard so the LLM stays silent rather than guessing when retrieval comes up empty, section-aware chunking, and BM25 + FlashRank re-ranking on top of dense retrieval.",
-        "technologies": ["Python", "LangChain", "Claude API", "ChromaDB", "Sentence Transformers", "Streamlit", "RAG"],
-        "url": "https://github.com/OpenOwls-at-Temple/hoot"
-    },
-    {
-        "id": 2,
         "title": "Lyra AI",
         "image": "/images/lyraai.png",
         "alt": "lyra-ai",
-        "description": "A full-stack text-to-speech and speech-to-speech web app covering the pipeline behind tools like ElevenLabs: typed text becomes natural speech in a chosen voice and language, and spoken recordings can be transcribed, translated, and re-spoken in another language. Includes accounts, credit tracking, and project-based history, built entirely on free-tier services.",
-        "technologies": ["Next.js", "Node.js", "Express", "JWT Auth", "Speech-to-Text", "Text-to-Speech"],
+        "description": "A full-stack text-to-speech and speech-to-speech web app covering the pipeline behind tools like ElevenLabs: typed text becomes natural speech in a chosen voice and language, and spoken recordings can be transcribed, translated, and re-spoken in another language. Includes accounts with JWT, Google and OTP sign-in, per-user credit tracking, and project-based history, built entirely on free-tier services.",
+        "technologies": ["Next.js", "Node.js", "Express", "MongoDB", "JWT Auth", "Speech-to-Text", "Text-to-Speech"],
         "url": "https://github.com/vvek17/LyraAI"
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "Customer Segmentation",
         "image": "/images/custmor.jpg",
         "alt": "customer-segmentation",
-        "description": "Built a customer segmentation platform analyzing 973 retail customers from 38 countries using Python (pandas, NumPy, scikit-learn, SciPy). Engineered 10 behavioral features from 50,000+ transactions: RFM analysis (Recency, Frequency, Monetary value), purchase patterns, and engagement metrics. Applied K-Means clustering (k=3) to identify 3 actionable customer segments: High-Value Loyal ($1,450 avg spend, 110 customers), Mid-Value Regular ($629 avg spend, 176 customers), and Low-Value Infrequent ($331 avg spend, 606 customers). Validated clustering with hierarchical analysis producing consistent 3-group structure. Implemented outlier removal (99th percentile) to refine dataset from 973 to 892 customers, improving segment interpretability.",
-        "technologies": [ "Python", "Pandas", "NumPy", "scikit-learn", "SciPy", "Matplotlib", "Seaborn", "Jupyter Notebook" ],
+        "description": "Segmentation of 973 retail customers across 38 countries, built in Python with pandas, NumPy, scikit-learn and SciPy. I engineered 10 behavioral features from 50,000+ transactions, including RFM analysis, purchase patterns and engagement metrics, then used K-Means at k=3 to pull out three segments worth marketing to differently: High-Value Loyal (110 customers, $1,450 average spend), Mid-Value Regular (176 customers, $629), and Low-Value Infrequent (606 customers, $331). Hierarchical clustering produced the same three-group structure, and trimming outliers at the 99th percentile narrowed the set from 973 to 892 and made the segments cleaner to read.",
+        "technologies": ["Python", "Pandas", "NumPy", "scikit-learn", "SciPy", "Matplotlib", "Seaborn", "Jupyter Notebook"],
         "url": "https://github.com/vvek17/Customer-segmentation-"
     },
     {
+        "id": 3,
+        "title": "Neo4j Baseball Knowledge Graph",
+        "image": "/images/neo4j_baseball.jpg",
+        "alt": "neo4j-baseball-graph",
+        "description": "A knowledge graph in Neo4j AuraDB modeling 20+ college baseball programs, ingesting 800+ players, 40 coaches and the conference hierarchies above them into 589 nodes and 575 relationships. Roster data comes from a custom Python, Selenium and BeautifulSoup scraping pipeline. On top of it sit transfer detection, semantic player queries and graph visualization, all driven through Cypher.",
+        "technologies": ["Neo4j", "Cypher", "Python", "Selenium", "BeautifulSoup", "Graph Database"],
+        "url": "https://github.com/vvek17/DimondKG-Project"
+    },
+    {
         "id": 4,
-        "title": "Gulf Laser Tag",
-        "image": "/images/gulflasertag.png",
-        "alt": "gulflasertag",
-        "description": "Gulf Laser Tag is a comprehensive platform offering premium laser-tag equipment, custom arena design, and business consultation services across the UAE and KSA. It supports clients from equipment selection through to venue launch and ongoing operation.",
-        "technologies": ["Next.js", "React.js", "SCSS", "Node.js", "Express.js", "MongoDB"],
-        "url": "https://www.gulflasertag.net/"
-    },
-    {
-        "id": 5,
-        "title": "A Comparative Study of Faithfulness Detection Methodsin Retrieval-Augmented Generation Systems",
-        "image": "/images/rag.jpg",
-        "alt": "RAG-Hallucination-Detection",
-        "description": "Evaluated multiple hallucination detection methods on HaluEval (10,000 examples). Zero-shot NLI with BART-MNLI and DeBERTa-v3-Large achieved 68.8% accuracy, F1=0.657 with no training. Compared SummaC-Zero (67.2% accuracy) and fine-tuned DeBERTa-v3-small (failed to converge, loss=0.693). Established production-ready RAG hallucination detection baseline requiring zero training overhead..",
-        "technologies": ["Python", "Hugging Face Transformers", "PyTorch", "scikit-learn", "HaluEval benchmark", "BART-MNLI", "DeBERTa-v3-Large", "DeBERTa-v3-small", "SummaC-Zero"], 
-        "url": "https://github.com/vvek17/A-Comparative-Study-of-Faithfulness-Detection-Methods-.pdf"
-    },
-    {
-        "id": 6,
         "title": "Voise.ai",
         "image": "/images/voise.png",
         "alt": "voise",
-        "description": "Voise.ai is an advanced AI-powered text-to-speech platform that enables users to generate human-like voiceovers in multiple languages and accents. Tailored for content creators, educators, and businesses, it offers a seamless solution for creating engaging audio content for videos, podcasts, and presentations.",
+        "description": "Voise.ai is an AI text-to-speech platform that generates human-like voiceovers in multiple languages and accents. It is aimed at content creators, educators and businesses who need audio for videos, podcasts and presentations without a recording setup.",
         "technologies": ["Next.js", "React.js", "SCSS", "TailWind", "Node.js", "Express.js", "MongoDB"],
         "url": "https://voise.ai/"
     },
     {
-        "id": 7,
-        "title": "Neo4j Baseball Knowledge Graph",
-        "image": "/images/neo4j_baseball.jpg",
-        "alt": "neo4j-baseball-graph",
-        "description": "Full-stack knowledge graph platform using Neo4j AuraDB to model 20+ college baseball programs. Ingests roster data from 800+ players, 40 coaches, and conference hierarchies. Features transfer detection, semantic player queries, and graph visualization with Cypher.",
-        "technologies": ["Neo4j", "Cypher", "Python", "Selenium", "JavaScript", "Graph Database"],
-        "url": "https://github.com/vvek17/DimondKG-Project"
+        "id": 5,
+        "title": "Gulf Laser Tag",
+        "image": "/images/gulflasertag.png",
+        "alt": "gulflasertag",
+        "description": "A platform for a laser-tag equipment and arena-design business operating across the UAE and KSA, covering clients from equipment selection through venue launch and ongoing operation.",
+        "technologies": ["Next.js", "React.js", "SCSS", "Node.js", "Express.js", "MongoDB"],
+        "url": "https://www.gulflasertag.net/"
     }
-
-
-
-
 ]
 
 function Projects() {

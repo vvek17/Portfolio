@@ -6,17 +6,15 @@ import styles from "./About.module.scss"
 
 export default function About() {
     const content = [
-        "Hey! I'm Vivek Solanki, a Master's student in Computational Data Science at Temple University with interests in Software Engineering, Machine Learning, Artificial Intelligence, Data Science, SQL, and Cloud Computing.", 
+        "Hey, I'm Vivek. I'm doing a Master's in Computational Data Science at Temple University, and most of my work now sits in one place: AI systems you can actually trust to tell you when they don't know.",
 
-        "My journey started with programming and problem-solving, but I quickly became fascinated by how software and data can work together to solve real-world challenges. Through internships, academic projects, and personal work, I've gained experience in software development, data engineering, machine learning, and cloud technologies.",
+        "That sounds abstract, so here is what it looks like in practice. On HOOT, a RAG assistant for Temple faculty policy questions, the part I spent the most time on was the guard that makes it stay quiet when retrieval comes up empty, because a confident wrong answer about someone's benefits is worse than no answer. On a hallucination-detection study across 10,000 HaluEval examples, the fine-tuned model sat at exactly chance for a while, and chasing down why — a loss-weighting scheme quietly sabotaging an already-balanced dataset — taught me more than the result did.",
 
-        "I've worked as a Frontend Developer Intern, a Python Developer Intern, and currently support technology operations at Temple University. These experiences have helped me develop strong technical, analytical, and problem-solving skills while working with diverse technologies and real-world systems.",
+        "I like problems where the honest answer is a number. Can a frozen medical encoder with nothing but a linear probe on top classify chest X-rays well enough to be a tool inside an agentic system? It turned out yes, 95.6% across four classes. Can a model predict who in an office clicks a phishing email purely by counting what it observes, with no access to their reasoning? That one I'm still finding out.",
 
-        "I'm also currently a contributor to HOOT (Helpful Owl Of Temple), a research project under Temple's OpenOwls student org building a citation-backed RAG assistant that answers faculty HR and policy questions using only Temple's own published documents, with a strict no-hallucination guardrail.",
+        "Before the Master's I was building rather than researching. I've been a Frontend Developer Intern writing Angular for a diamond-industry client, a Python Data Analyst Intern cleaning 45,000+ records into something a model could use, and I currently support classroom technology at Temple. I've also built things for their own sake: Voise.ai and Lyra AI for text-to-speech, a cloud image-processing app on Django with EC2 and S3, a financial-transaction NER system in spaCy, and a Neo4j knowledge graph of college baseball rosters.",
 
-        "Some of my favorite projects include Voise.ai, an AI-powered text-to-speech platform; a cloud-based image processing application built with Django, AWS EC2, and Amazon S3; a Financial Transaction NER system using spaCy and NLP; and most recently, I researched hallucination detection in RAG systems using Hugging Face transformer models, including BART and DeBERTa, comparing zero-shot classification and fine-tuning approaches to evaluate the reliability of AI-generated responses.",
-
-        "I'm passionate about building impactful solutions at the intersection of software, data, and AI. Whether it's developing applications, designing databases, creating machine learning models, or deploying cloud-based systems, I enjoy learning new technologies and solving meaningful problems."
+        "I'm looking for AI and ML engineering work where the evaluation matters as much as the model. If you have something in that direction, my inbox is open."
 
     ];
 

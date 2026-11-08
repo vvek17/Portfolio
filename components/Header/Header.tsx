@@ -66,6 +66,7 @@ function Header() {
         { name: 'Home', id: 'hero' },
         { name: 'About', id: 'about' },
         { name: 'Skills', id: 'skills' },
+        { name: 'Research', id: 'research' },
         { name: 'Projects', id: 'projects' },
         { name: 'Experience', id: 'experience' },
         { name: 'Contact', id: 'contact' }

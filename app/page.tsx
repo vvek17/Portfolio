@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
+import Research from "@/components/Research/Research";
 import Skills from "@/components/Skills/Skills";
 import { Toaster } from "react-hot-toast"
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
+      <Research />
       <Projects />
       <Experience />
       <Contact />
