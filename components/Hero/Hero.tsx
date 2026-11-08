@@ -50,8 +50,7 @@ export default function Hero() {
                 className={styles.ctaWrapper}>
                 <motion.a
                     className={styles.cta}
-                    href="#projects"
-
+                    href="#research"
                 >
                     View My Work
                 </motion.a>
