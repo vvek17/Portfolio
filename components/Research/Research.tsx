@@ -48,7 +48,7 @@ const research = [
         title: "ALERT — Phishing-Susceptibility Digital Twin",
         image: "/images/alert.svg",
         alt: "alert-digital-twin",
-        venue: "Temple University · M.S. research",
+        venue: "IHR Lab, Temple University · Advisor: Prof. Huanmei Wu",
         period: "Oct 2026 — Present",
         description:
             "Staff at a fictional hospital receive simulated phishing and legitimate email. ALERT learns to predict whether each person will click, report, or ignore a message, and it is never allowed to see why they really do it — it only counts what it observes, as P(click) = yes / (yes + no). The point of the constraint is to find out how far pure observation gets you, so I benchmarked the counting twin head-to-head against a scikit-learn pipeline on the same data and graded both on emails they had never seen. Supporting it is an email generator that builds fresh phishing from genuine messages by swapping entities and applying the modifications that make a message phishy, a SQLite schema seeding the personas, and a Streamlit app with an instructor workspace. Backend and frontend are strictly split: if a module draws it is frontend, if it decides it is backend, and nothing in backend imports Streamlit. Every name, domain, and record is fabricated.",
